@@ -15,4 +15,9 @@ def print_results(results, show_all=False):
                 print(f"{color}{ip} - {status_text}")
             else:
                 print(f"{ip} - {status_text}")
-    # print_summary(results)
+    print_summary(results)
+
+def print_summary(results):
+    total = len(results)
+    alive = sum(1 for status in results.values() if status)
+    print(f"\nSummary: {alive}/{total} hosts are up")
