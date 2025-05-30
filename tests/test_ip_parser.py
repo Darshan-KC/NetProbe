@@ -14,3 +14,7 @@ def test_parse_range_valid():
     result = parse_range("192.168.1.1", "192.168.1.3")
     expected = ["192.168.1.1", "192.168.1.2", "192.168.1.3"]
     assert result == expected
+
+def test_parse_range_invalid():
+    with pytest.raises(ValueError):
+        parse_range("192.168.1.10", "192.168.1.5")
