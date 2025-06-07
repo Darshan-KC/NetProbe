@@ -1,5 +1,5 @@
 import pytest
-from sweeper.scanner import scan_ips
+import sweeper.scanner
 
 
 @pytest.fixture
@@ -8,7 +8,7 @@ def mock_ping(monkeypatch):
 
 def test_scan_ips_basic(mock_ping):
     ips = ["192.168.1.1", "192.168.1.2", "192.168.1.3"]
-    results = scan_ips(ips, threads=2)
+    results = sweeper.scanner.scan_ips(ips, threads=2)
     assert results == {
         "192.168.1.1": True,
         "192.168.1.2": True,
