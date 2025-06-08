@@ -4,7 +4,7 @@ import sweeper.scanner
 
 @pytest.fixture
 def mock_ping(monkeypatch):
-    monkeypatch.setattr("sweeper.pinger.ping_host", lambda ip: ip.endswith("1") or ip.endswith("2"))
+    monkeypatch.setattr("sweeper.scanner.ping_host", lambda ip: ip.endswith("1") or ip.endswith("2"))
 
 def test_scan_ips_basic(mock_ping):
     ips = ["192.168.1.1", "192.168.1.2", "192.168.1.3"]
