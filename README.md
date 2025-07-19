@@ -70,10 +70,16 @@ python run.py --cidr 192.168.0.0/28 --txt output.txt
 ```
 -->
 
-# LICENSE
-MIT License
+## 📄 License
 
-Copyright (c) 2025 Darshan KC
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This project is licensed under the [MIT License](LICENSE).  
+You are free to use, modify, and distribute this software in compliance with the license terms.
+
+## ©️ Copyright
+
+Copyright © 2025 Darshan KC 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
